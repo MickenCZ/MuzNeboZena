@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muž nebo Žena?</title>
+  <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.6.0/dist/tf.min.js" defer></script>
+  <script src="./script.js" type="module" defer></script>
+</head>
+<body>
+  <header id="title">
+    <h1 id="header">Muž nebo Žena?</h1>
+    <h2 id="subheader">Můj tensorflow model to dokáže pomocí umělé inteligence z obrázku poznat.<br>Pošlete odkaz nebo soubor, a bot to pozná! Vlastní obrázky prosím oříznout jen na obličej.</h2>
+</header>
+  <div id="form">
+    <input type="file" accept="image/*" id="fileInput" />
+    <button type="button" id="submit">Odeslat Soubor</button>
+  </div>
+  <div id="inputWrapper">
+    <input type="url" id="url"  placeholder="URL obrázku obličeje" />
+    <button id="submitURL">Odeslat Odkaz</button>
+  </div>
+<div id="result"></div>
+<img id="imageTag" width="180px" height="180px">
+<p id="p" class="extra-info" style="display: none;"></p>
+
+
+</body>
+</html>
